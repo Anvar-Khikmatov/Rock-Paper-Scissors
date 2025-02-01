@@ -1,82 +1,88 @@
-let computerChoice;
-let humanChoice;
-let humanScore = 0;
-let computerScore = 0;
-let rounds;
+// let computerSelection = computerChoiceFunction();
+let humanSelection = humanChoiceFunction();
+
 
 function humanChoiceFunction() {
-    return humanChoice = prompt("choose Rock Paper Scissor")
-}
- 
-
-
-
-function computerChoiceFunction() {
-    for (rounds = 1; rounds <= 5; rounds++) {
-        alert("Round: " + rounds)
-        randomNumber = Math.random() * 9;
-        alert(randomNumber)
-        humanChoiceFunction()
-        
-     
-
-        if (randomNumber < 3) {
-            computerChoice = "Rock"
-            if (humanChoice === computerChoice) {
-                alert('It\'s a tie')
-                return computerChoiceFunction()
-            } else if (humanChoice === "Paper") {
-                alert("You won this round")
-                humanScore++;
-            
-                
-            } else if (humanChoice === 'Scissor') {
-                alert("You lost this round")
-                computerScore++;
-           
-            }
-        }
-
-
-        else if (randomNumber < 6) {
-            computerChoice = "Paper"
-            if (humanChoice === computerChoice) {
-                alert('It\'s a tie')
-                return computerChoiceFunction()
-            } else if (humanChoice === "Scissor") {
-                alert("You won this round")
-                humanScore++;
-           
-            } else if (humanChoice === 'Rock') {
-                alert("You lost this round")
-                computerScore++;
-            
-            }
-        }
-
-
-        
-        else if (randomNumber < 9) {
-            computerChoice = "Scissor"
-            if (humanChoice === computerChoice) {
-                alert('It\'s a tie')
-                return computerChoiceFunction()
-            } else if (humanChoice === "Rock") {
-                alert("You won this round")
-                humanScore++;
-        
-            } else if (humanChoice === 'Paper') {
-                alert("You lost this round")
-                computerScore++;
-            
-            }
-        }
+    let choice = prompt("choose: Rock Paper Scissor")
+    let humanChoice = choice.charAt(0).toUpperCase() + choice.slice(1).toLowerCase();
+    if (!(humanChoice === 'Rock' || humanChoice === 'Paper' || humanChoice === 'Scissor')){
+        alert("Invalid input! Please enter again") 
+        return humanChoiceFunction();
+    } else {
+        alert(humanChoice)
+        return humanChoice
     }
 }
+humanChoiceFunction()
+    
 
-computerChoiceFunction();
-alert(`Your score: ${humanScore}`);
-alert(`Computer score: ${computerScore}`);
+
+// function computerChoiceFunction() {
+//     let computerChoice;
+//     let randomNumber;
+
+//     randomNumber = Math.random() * 9;
+       
+//     if (randomNumber < 3) {
+//        return computerChoice = "Rock"
+       
+//     } else if (randomNumber < 6) {
+//        return computerChoice = "Paper"
+     
+//     } else if (randomNumber < 9) {
+//        return computerChoice = "Scissor"
+//     }  
+// }
+
+
+//             if (humanChoice === computerChoice) {
+//                 alert('It\'s a tie')
+//                 return computerChoiceFunction()
+//             } else if (humanChoice === "Paper") {
+//                 alert("You won this round")
+//                 humanScore++;
+            
+                
+//             } else if (humanChoice === 'Scissor') {
+//                 alert("You lost this round")
+//                 computerScore++;
+           
+//             }
+//         }
+        
+//             if (humanChoice === computerChoice) {
+//                 alert('It\'s a tie')
+//                 return computerChoiceFunction()
+//             } else if (humanChoice === "Scissor") {
+//                 alert("You won this round")
+//                 humanScore++;
+           
+//             } else if (humanChoice === 'Rock') {
+//                 alert("You lost this round")
+//                 computerScore++;
+            
+//             }
+        
+        
+//             if (humanChoice === computerChoice) {
+//                 alert('It\'s a tie')
+//                 return computerChoiceFunction()
+//             } else if (humanChoice === "Rock") {
+//                 alert("You won this round")
+//                 humanScore++;
+        
+//             } else if (humanChoice === 'Paper') {
+//                 alert("You lost this round")
+//                 computerScore++;
+            
+//             }
+        
+    
+
+
+// computerChoiceFunction();
+// alert(`Your score: ${humanScore}`);
+// alert(`Computer score: ${computerScore}`);
 
 
 
