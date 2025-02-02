@@ -17,7 +17,6 @@ function getHumanChoice() {
 }
     
 
-
 function getComputerChoice() {
     let computerChoice;
     let randomNumber;
