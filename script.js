@@ -55,13 +55,13 @@ function playRound() {
         if ((humanChoice === "Rock" && computerChoice === "Scissor") ||
             (humanChoice === "Paper" && computerChoice === "Rock") ||
             (humanChoice === "Scissor" && computerChoice === "Paper")) {
-                    alert("You won this round")
+                    alert(`You won round ${rounds}`)
                     humanScore++;
             
         } else if ((computerChoice === "Rock" && humanChoice === "Scissor") ||
             (computerChoice === "Paper" && humanChoice === "Rock") ||
             (computerChoice === "Scissor" && humanChoice === "Paper")) {
-                    alert("Computer won this round")
+                    alert(`Computer won round ${rounds}`)
                     computerScore++;
         }
           rounds++;
