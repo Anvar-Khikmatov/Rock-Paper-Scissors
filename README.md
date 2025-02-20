@@ -1,7 +1,7 @@
-# Rock Paper Scissors 🎮
-A simple and interactive Rock Paper Scissors game where you play against the computer. First to 5 points wins!
+# Rock Paper Scissors 🎮  
+A simple and interactive Rock Paper Scissors game where you play against the computer. First to 5 points wins!  
 
-## Features ✨
+## Features ✨  
 ✔️ Click-based gameplay with images for choices  
 ✔️ Live score tracking for both player and computer  
 ✔️ Randomized computer moves for fairness  
