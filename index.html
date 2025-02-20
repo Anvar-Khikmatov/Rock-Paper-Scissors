@@ -4,24 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="img/png" href="img/rock-paper-scissors.png">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Rock Paper Scissor</h1>
+    <div class="winner"> </div>
+    <div class="overlay"></div>
+
+    <div class = "header">Rock-Paper-Scissors</div>
+    <div class = "info">First to get 5 Winner!</div>
+    <div class = "main">
+        <div class="humanScoreTab">
+            
+            <i class="fa-solid fa-user"> Player</i> 
+            <p class="humanScoreCounter">0</p>  
+        </div>
+        
+        <img src="" alt="">
+        <div class="box">
+            <div class="avatar">
+                <div class="humanPoint"><p></p></div>
+
+                <div class="humanPick"> <img class="avatar human" src="" style="display: none;"> </div>
+
+                <div class="resultMessage"><p></p></div>
+                
+                <div class="computerPick"> <img class="avatar computer" src="" style="display: none;" ></div>
+
+                <div class="computerPoint"> <p></p></div>
+            </div>
+            
+            <div class="choiceHum">
+                <div class="choice rock"> <img src="img/rock.png" ></div>
+                <div class="choice paper"> <img src="img/paper.png"></div>
+                <div class="choice scissor"><img src="img/scissor.png"></div>
+            </div>
+        </div>
+
+        <div class="computerScoreTab">
+            <i class="fa-solid fa-desktop"> Computer</i>   
+            <p class="computerScoreCounter">0</p>
+        </div>
+    </div>
+    <div class = "reset"> <button>Reset</button> </div>
+    <div class = "footer" style="font-weight: 200;">&copy; 2025 Anvar Khikmatov</div>
+
     
-    <div> Human choice: <span class="human-choice"></span></div>
-    <div> Computer choice: <span class="computer-choice"></span></div>
 
-    <div> Human score: <span class="human-score"></span></div>
-    <div> Computer score: <span class="computer-score"></span></div>
-
-
-    <button>Rock</button>
-    <button>Paper</button>
-    <button>Scissor</button>
-    <button>Reset</button>
-
+        <script src="script.js"></script>
     
-    <script src="script.js"></script>
 </body>
 </html>
