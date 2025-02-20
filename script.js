@@ -25,8 +25,8 @@ const imagePath = {
     rockSmile: "img/rock-smile.webp",
     rockScared: "img/scared rock.png",
     Rock: "img/rock.png",
-    Paper: "img/paper.PNG",
-    Scissor: "img/scissor.PNG"
+    Paper: "img/paper.png",
+    Scissor: "img/scissor.png"
 }
 
 
