@@ -13,3 +13,6 @@ A simple and interactive Rock Paper Scissors game where you play against the com
 🔹 Improve animations for a smoother experience  
 🔹 Implement difficulty levels (Easy, Medium, Hard)  
 🔹 Add a leaderboard to track scores  
+
+## Live Demo
+ https://anvar-khikmatov.github.io/Rock-Paper-Scissors/
