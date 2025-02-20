@@ -17,8 +17,6 @@ let humanScore = 0;
 let computerScore = 0;
 
 
-console.log(humanScore);
-
 const imagePath = {
     humanTie: "img/side aye def.png",
     computerTie: "img/side aye.png",
